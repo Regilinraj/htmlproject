@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <TITLE>COLLEGE ADMISSION FORM</TITLE>
+    <STYLE>
+        BODY{
+            font-family: Arial, sans-serif;
+            background-color: #F4F4F4;
+            padding: 20PX;
+        }
+        .FORM-CONTAINER{
+            width: 500PX;
+            margin: auto;
+            background:white;
+            padding: 20PX;
+            border-radius: 10PX;
+            box-shadow: 2PX 2PX 10PX RGBA(0,0,0,0.2);
+        }
+        fieldset{
+            border: 2PX SOLID #333;
+            padding: 15PX;
+            margin-bottom: 15PX;
+            border-radius: 5PX;
+        }
+        LEGEND{
+            font-weight: BOLD;
+            font-size: 16PX;
+            padding: 0 10PX;
+        }
+        .FORM-GROUP{
+            display: FLEX;
+            flex-direction: column;
+            margin-bottom: 10PX;
+        }
+        LABEL{
+            display: block;
+            margin-top: 10PX;
+        }
+       INPUT,SELECT,TEXTAREA{
+        width: 100%;
+        padding: 8PX;
+        margin-top: 5PX;
+        border: 1PX SOLID #CCC;
+        border-radius: 5PX;
+        font-size: 14PX;
+       }
+       .GENDER-OPTIONS{
+        display: flex;
+        align-items: CENTER;
+        gap: 15PX;
+        margin-top: 5PX;
+       }
+       .GENDER-OPTIONS LABEL{
+        font-weight: normal;
+        margin: 0;
+
+       }
+       .BTN-CONTAINER{
+        text-align: center;
+        margin-top: 10PX;
+       }
+       BUTTON{
+        padding: 10PX 15PX;
+        background: #333;
+        color: white;
+        border: none;
+        border-radius: 5PX;
+        cursor: pointer;
+
+       }
+       BUTTON:HOVER{
+        background: #555;
+       }
+    </STYLE>
+</head>
+<BODY>
+
+<CENTER>
+    <H1>CSI INSTITUTE OF TECHNOLOGY</H1>
+    <H2>ADMISSION FORM</H2>
+</CENTER>
+<HR>
+    <DIV CLASS="FORM-CONTAINER">
+    <FORM ACTION="index.html">
+        <FIELDSET>
+            <LEGEND>PERSONAL DETAILS</LEGEND>
+            <DIV CLASS="FORM-GROUP">
+        <LABEL>NAME:</LABEL>
+        <INPUT TYPE="TEXT" REQUIRED>
+            </DIV>
+            <LABEL>DATE OF BIRTH:</LABEL>
+            <INPUT TYPE="DATE" REQUIRED>
+                <DIV CLASS="GENDER-OPTIONS">
+                <LABEL>GENDER</LABEL>
+                <INPUT TYPE="RADIO" NAME="GENDER">MALE<INPUT TYPE="RADIO" NAME="GENDER">FEMALE</DIV>
+                    <LABEL>EMAIL</LABEL>
+                    <INPUT TYPE="EMAIL">
+        </FIELDSET>
+        <fieldset>
+            <LEGEND>EDUCATIONAL DETAILS</LEGEND>
+                        <LABEL>HSC PERCENTAGE</LABEL>
+                        <INPUT TYPE="NUMBER">
+                            <LABEL>COURSE</LABEL>
+                            <SELECT>
+                                <OPTION>CSE</OPTION>
+                                <OPTION>IT</OPTION>
+                                <OPTION>ECE</OPTION>
+                                <OPTION>MBA</OPTION>
+                                <OPTION>MCA</OPTION>
+                                <OPTION>CIVIL</OPTION>
+                                <OPTION>MECHANICAL</OPTION>
+                            </SELECT>
+        </fieldset>
+        <FIELDSET>
+            <LEGEND>OTHER INFO</LEGEND>
+                            <LABEL>ADDRESS</LABEL>
+                            <INPUT TYPE="TEXT"><BR><BR>
+                                <LABEL>UPLOAD YOUR PHOTO</LABEL>
+                                <INPUT TYPE="FILE"><BR><BR>
+                                    <LABEL></LABEL>
+                                    <INPUT TYPE="CHECKBOX">I AGREE TO THE TERMS AND CONDITIONS
+        </FIELDSET>
+        <DIV CLASS="BTN-CONTAINER">
+                                        <BUTTON TYPE="RESET">RESET</BUTTON>
+                                        <button TYPE="SUBMIT">SUBMIT</button>
+                                        </DIV>
+    </FORM>
+                                            
+
+    </FORM>
+
+
+
+</BODY>
+    </html>
