@@ -10,9 +10,10 @@
         }
         .FORM-CONTAINER{
             width: 90%;
+            max-width:400px;
             margin: auto;
             background:white;
-            padding: 20PX;
+            padding: 15PX;
             border-radius: 10PX;
             box-shadow: 2PX 2PX 10PX RGBA(0,0,0,0.2);
         }
@@ -38,6 +39,7 @@
         }
        INPUT,SELECT,TEXTAREA{
         width: 100%;
+        box-sizing:border-box;
         padding: 8PX;
         margin-top: 5PX;
         border: 1PX SOLID #CCC;
@@ -71,6 +73,11 @@
        BUTTON:HOVER{
         background: #555;
        }
+        @media(max-width:480px){
+            .form-container{
+                width:95%;
+                padding:10px;
+            }
     </STYLE>
 </head>
 <BODY>
